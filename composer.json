@@ -6,8 +6,8 @@
     "keywords": ["laravel", "mail", "email", "transport", "coss"],
     "homepage": "https://coss.com/docs/integrations/laravel",
     "support": {
-        "issues": "https://github.com/cosscom/coss/issues",
-        "source": "https://github.com/cosscom/coss/tree/main/integrations/laravel",
+        "issues": "https://coss.com/contact",
+        "source": "https://github.com/cosscom/coss-laravel",
         "docs": "https://coss.com/docs/integrations/laravel"
     },
     "authors": [
