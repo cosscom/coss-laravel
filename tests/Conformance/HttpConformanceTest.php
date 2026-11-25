@@ -7,6 +7,7 @@ use Coss\Laravel\Exceptions\CossTransportException;
 use Coss\Laravel\Http\CossClient;
 use Coss\Laravel\Tests\Support\Conformance;
 use Coss\Laravel\Tests\Support\FakeApi;
+use Coss\Laravel\Version;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
@@ -68,7 +69,7 @@ final class HttpConformanceTest extends TestCase
             foreach ($spec['request_headers'] as $name => $value) {
                 $this->assertSame($value, $request->getHeaderLine($name), $name);
             }
-            $this->assertSame('coss-laravel/0.1.0', $request->getHeaderLine('User-Agent'));
+            $this->assertSame('coss-laravel/'.Version::VERSION, $request->getHeaderLine('User-Agent'));
             $this->assertSame($minimal['body'], $api->body($index));
             $keys[] = $request->getHeaderLine('Idempotency-Key');
         }
