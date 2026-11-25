@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Package metadata links the public source mirror, cosscom/coss-laravel, instead of the monorepo,
+  which is now private. No code changes.
+
 ## 0.1.0
 
 - Initial release: the `coss` mail transport for Laravel 12 and 13. Mailables and notifications
